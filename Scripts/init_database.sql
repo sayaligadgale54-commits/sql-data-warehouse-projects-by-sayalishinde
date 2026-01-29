@@ -28,12 +28,12 @@ USE DataBank;
 GO
 
 -- Create Schemas
-CREATE SCHEMA bronze;
+CREATE SCHEMA Raw_Data;
 GO
 
-CREATE SCHEMA silver;
+CREATE SCHEMA Base_Data;
 GO
 
-CREATE SCHEMA gold;
+CREATE SCHEMA Analytics_Data;
 GO
 
