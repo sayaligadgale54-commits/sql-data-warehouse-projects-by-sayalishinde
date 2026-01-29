@@ -1,3 +1,18 @@
+/*
+===============================================================================
+DDL Script: Create RAW_Data Tables
+===============================================================================
+Script Purpose:
+    This script creates tables in the 'Raw_data' schema, dropping existing tables 
+    if they already exist.
+	  Run this script to re-define the DDL structure of 'Raw_data' Tables
+===============================================================================
+*/
+
+IF OBJECT_ID('Raw_data.crm_cust_info', 'U') IS NOT NULL
+    DROP TABLE Raw_Data.crm_cust_info;
+GO
+
 create table Raw_Data.crm_cust_info(
 cust_id int,
 cust_key nvarchar(50),
